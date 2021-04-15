@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karantina', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#07085b,#06bfad, crimson);
+    clip-path: circle(20% at right 90%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f32195,rgb(57, 20, 220));
+    clip-path: circle(20% at 0% 10%);   
+}
+section{
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ display: flex;
+}
+section .imgbx{
+    position: relative;
+    width: 50%;
+ height: 100%;
+}
+section .imgBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  height: 100%;
+  /* background: linear-gradient(); */
+}
+section .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+section .contentbx{
+    display: flex;
+    width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+section .contentbx .formbx{
+    width: 50%;
+}
+section .contentbx .formbx h1{
+    color: #e13269;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #07085b;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx p{
+    color: #07085b;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    /* border-bottom: 4px solid #06bfad; */
+    display: inline-block;
+    letter-spacing: 1.5px;
+}
+section .contentbx .formbx h2{
+    color: black;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #e13269;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentbx .formbx .inputbx{
+    margin-bottom: 20px;
+}
+section .contentbx .formbx .inputbx span
+      {
+          font-size: 16px;
+          margin-bottom: 5px;
+          display: inline-block;
+          letter-spacing: 1px;
+          color: #f5a641;
+          font-weight: bolder;
+          font-size: 30px;
+      }
+      section .contentbx .formbx .inputbx input{
+          width: 100%;
+          padding: 10px 20px;
+          outline: none;
+          font-weight: 400;
+          border: 1px solid #07085b;
+          font-size: 16px;
+          letter-spacing: 1px;
+          color: black;
+          background: transparent;
+          border-radius: 30px;
+      }
+      section .contentbx .formbx .inputbx input[type="submit"]{
+          background: #e13269;
+          color: #fff;
+          outline: none;
+          border: none;
+          font-weight: 500;
+          cursor: pointer;
+      }
+      section .contentbx .formbx .inputbx input[type="submit"]:hover{
+          border: 2px solid #07085b;
+          background: none;
+          color: #e13269;
+      }
+      section .contentbx .formbx .remember{
+margin-bottom: 10px;
+color: #f5a641;
+font-size: 20px;
+font-weight: 400;
+      }
